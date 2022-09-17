@@ -9,9 +9,9 @@ para luego poder visualizarla en un gráfico de lineas y de velas.
 + 1-`Funcionalidad Api`: Interacción con api poligon.io 
 + 2- `Funcionalidad Base de datos`: Creación, actualizaciónn y lectura de Base de datos 
 + 3- `Funcionalidad Gráficos`: Realización de gráficos
-## ✔️:Tecnologias utilizadas
+## ✔️Tecnologias utilizadas
 + Python
-## ✏️:Autores
+## ✏️Autores
 * Catalina Vivot
 * Sebastian Gómez
 * Federico Gómez
