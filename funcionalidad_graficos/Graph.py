@@ -1,9 +1,8 @@
 #------------FUNCIÓN PARA GRAFICAR LOS TICKERS-----------#
 import sqlite3 as sql
 import pandas as pd
-import matplotlib as mpl
 import matplotlib.pyplot as plt
-import numpy as np
+
 
 def graphic(table,ticker):
     conn = sql.connect(table) 
@@ -23,15 +22,14 @@ def graphic(table,ticker):
     #Index para que me lo tome como el eje x. 
     prices.set_index('Date', inplace=True)
 
-    fig, ax = plt.subplots(2, 1)
-    plt.rcParams["figure.figsize"] = [10, 10]
+    plt.rcParams["figure.figsize"] = [15, 10]
     plt.rcParams["figure.autolayout"] = True
 
     #Graficamos uno de líneas
     plt.subplot(212)
     ax = plt.gca()
 
-    prices.plot(kind='line',marker='^', y='Close', color='blue', ax=ax)
+    prices.plot(kind='line',marker='.', y='Close', color='blue', ax=ax)
     ax.set_ylabel("Cierre")
     ax.set_xlabel("Periodo")
 
@@ -39,7 +37,7 @@ def graphic(table,ticker):
     plt.subplot(211)
 
     #Defino el ancho de los boxplots
-    width = 2
+    width = 1.5
     width2 = .1
 
     #Defino los precios up y down
