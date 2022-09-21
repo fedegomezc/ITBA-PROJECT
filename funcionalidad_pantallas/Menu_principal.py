@@ -8,7 +8,7 @@ from funcionalidad_pantallas.Print_Resumen import imprimir as im                
 
 # creamos la ventana principal
 ventana = tk.Tk()
-ventana.title('ITBA Project')          # Ver que nombre le ponemos
+ventana.title('ITBA Project')          
 ventana.geometry('500x400')
 
 # creamos una barra de menús y la añadimos a la ventana principal
