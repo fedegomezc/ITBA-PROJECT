@@ -21,13 +21,13 @@ def actualizacion():
     label2 = tk.Label(ventana1, text="Desde [AAAA-MM-DD]")
     label2.grid(column=0, row=1)
     dato2 = tk.StringVar()
-    entry2 = tk.Entry(ventana1, width=30, textvariable=dato2)         #Ver en que formato debe ingresar la fecha
+    entry2 = tk.Entry(ventana1, width=30, textvariable=dato2)         
     entry2.grid(column=1, row=1)
     # Caja de texto fecha fin a pedir
     label3 = tk.Label(ventana1, text="Hasta [AAAA-MM-DD]")
     label3.grid(column=0, row=2)
     dato3 = tk.StringVar()
-    entry3 = tk.Entry(ventana1, width=30, textvariable=dato3)         #Ver en que formato debe ingresar la fecha
+    entry3 = tk.Entry(ventana1, width=30, textvariable=dato3)         
     entry3.grid(column=1, row=2)
     # Caja de texto con timespan
     label4 = tk.Label(ventana1, text="Espacio de tiempo \n[day,week,month,quarter,year]")
