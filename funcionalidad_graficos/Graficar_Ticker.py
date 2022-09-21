@@ -1,5 +1,5 @@
 #-----------------Ventana para pedir datos al usuario - Gráfico de Ticker-------------------#
-from ast import Continue
+
 import tkinter as tk
 from tkinter import messagebox
 from funcionalidad_graficos.Graph import graphic as gp
