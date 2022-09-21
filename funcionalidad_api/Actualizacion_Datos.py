@@ -1,7 +1,6 @@
 #---------------------Pedido de datos para la Actualización de datos------------------#
 
 from ast import Continue
-from email import message
 import tkinter as tk
 from tkinter import messagebox
 from funcionalidad_api.Api import callApi as api
@@ -33,7 +32,7 @@ def actualizacion():
     label4 = tk.Label(ventana1, text="Espacio de tiempo \n[day,week,month,quarter,year]")
     label4.grid(column=0, row=3)
     dato4 = tk.StringVar()
-    entry4 = tk.Entry(ventana1, width=30, textvariable=dato4)         #Ver en que formato debe ingresar la fecha
+    entry4 = tk.Entry(ventana1, width=30, textvariable=dato4)         
     entry4.grid(column=1, row=3)
 
     # Función boton de ingreso de datos
