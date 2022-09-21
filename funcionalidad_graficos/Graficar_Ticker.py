@@ -22,7 +22,7 @@ def graficarTicker():
             messagebox.showwarning('Mensaje','Ticker cargado incorrectamente')
         def cerrarVentana():
             ventana1.destroy()
-        ventana1.title("Graficando...")       # Instanciar con programa de graficar
+        ventana1.title("Graficando...")       
         ventana1.after(1000,cerrarVentana)         #Cerramos la ventana 
     
     # Botón para envío de los datos
